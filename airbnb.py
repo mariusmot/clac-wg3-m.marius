@@ -13,7 +13,7 @@ async def main():
 
         #Accept Cookies - Locate by role
         await page.get_by_role("button", name=re.compile("OK")).click()
-        await expect(page).to_have_title("Închirieri de case de vacanță și apartamente în complexuri rezidențiale - Airbnb - Airbnb")
+        await expect(page).to_have_title("Închirieri de case de vacanță și apartamente în complexuri rezidențiale - Airbnb")
         print('Cookies Accepted')
 
         #Click little Search icon - Locate by test id
